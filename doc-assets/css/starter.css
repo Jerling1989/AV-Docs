@@ -148,7 +148,7 @@ h4:hover .anchorjs-link {
     padding-left: 1rem;
   }
   .u-header--starter-dark-logo .u-header--starter__logo {
-    background-color: #1e2022;
+    background-color: #222;
   }
   .u-header--starter .form-inline {
     width: 100%;
@@ -241,7 +241,7 @@ h4:hover .anchorjs-link {
   display: block;
   font-size: .8175rem;
   font-weight: 600;
-  color: #1e2022;
+  color: #222;
   text-transform: uppercase;
   margin-bottom: .5rem;
 }
@@ -265,13 +265,13 @@ h4:hover .anchorjs-link {
   color: #569bbe;
 }
 .hs-docs-navside__links > li > a:hover {
-  color: #1e2022;
+  color: #222;
 }
 .hs-docs-navside__links > li > a.active:hover {
   color: #569bbe;
 }
 .hs-docs-sidebar--dark {
-  background-color: #1e2022;
+  background-color: #222;
 }
 .hs-docs-sidebar--dark .hs-docs-navside__links > li > a {
   color: rgba(255,255,255, .5);
