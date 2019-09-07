@@ -255,8 +255,8 @@ h4:hover .anchorjs-link {
 }
 .hs-docs-navside__links > li > a {
   display: block;
-  padding-top: .25rem;
-  padding-bottom: .25rem;
+  padding-top: .2825rem;
+  padding-bottom: .2825rem;
   font-size: 90%;
   color: #5a5f69;
 }
