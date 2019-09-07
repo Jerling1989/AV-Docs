@@ -262,13 +262,13 @@ h4:hover .anchorjs-link {
 }
 .hs-docs-navside__links > li > a.active {
   font-weight: 600;
-  color: #377dff;
+  color: #569bbe;
 }
 .hs-docs-navside__links > li > a:hover {
   color: #1e2022;
 }
 .hs-docs-navside__links > li > a.active:hover {
-  color: #377dff;
+  color: #569bbe;
 }
 .hs-docs-sidebar--dark {
   background-color: #1e2022;
@@ -277,13 +277,13 @@ h4:hover .anchorjs-link {
   color: rgba(255,255,255, .5);
 }
 .hs-docs-sidebar--dark .hs-docs-navside__links > li > a.active {
-  color: #377dff;
+  color: #569bbe;
 }
 .hs-docs-sidebar--dark .hs-docs-navside__links > li > a:hover {
   color: rgba(255,255,255, .8);
 }
 .hs-docs-sidebar--dark .hs-docs-navside__links > li > a.active:hover {
-  color: #377dff;
+  color: #569bbe;
 }
 
 /*------------------------------------

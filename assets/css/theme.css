@@ -12709,21 +12709,21 @@ table th {
 ------------------------------------*/
 ::-moz-selection {
   color: #fff;
-  background-color: #377dff;
+  background-color: #569bbe;
 }
 
 ::selection {
   color: #fff;
-  background-color: #377dff;
+  background-color: #569bbe;
 }
 
 .bg-primary ::-moz-selection {
-  color: #377dff;
+  color: #569bbe;
   background-color: #fff;
 }
 
 .bg-primary ::selection {
-  color: #377dff;
+  color: #569bbe;
   background-color: #fff;
 }
 
