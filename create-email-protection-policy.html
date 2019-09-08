@@ -220,9 +220,41 @@
         <li>Detect and Protect</li>
         <li>Protect (Inline)</li>
       </ol>
-      <p><strong>Monitor only</strong> mode provides visibility into the cloud-hosted email leveraging publicly available API’s and a journal entry from the SaaS email provider. Scan results are provided from 60+ best of breed security tools. In this mode manual and automated query based quarantines are available after delivery to the user mailbox.</p>
+      <p><strong>Monitor Only mode</strong> provides visibility into the cloud-hosted email leveraging publicly available API’s and a journal entry from the SaaS email provider. Scan results are provided from 60+ best of breed security tools. In this mode manual and automated query based quarantines are available after delivery to the user mailbox.</p>
 
       <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/API+Journal-Monitor-Only.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
+
+      <ol>
+        <li>Incoming email passes through email provider’s spam filter. Emails are sorted accordingly,</li>
+        <ol type="a">
+          <li>Rejected</li>
+          <li>Accepted, Moved to Junk</li>
+          <li>Accepted, Moved to Inbox</li>
+        </ol>
+        <li>Manual and automated query based quarantines are available after delivery to the user mailbox.</li>
+      </ol>
+
+      <p class="mt-4"><strong>Detect and Protect mode</strong> provides an increased level of protection that scans email via journaling leveraging the same SaaS email provider API’s. This mode adds an automated policy action to quarantine malware, phishing attacks etc. based on the results of the best of breed security stack. In this mode user notifications and release workflows are available.</p>
+
+      <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/API+Journal.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
+
+      <ol>
+        <li>Incoming email arrives in respective mailbox folder.</li>
+        <li>Avanan detects new email and scans (10 sec - 5 min).</li>
+        <li>If malicious, Avanan takes automatic action, otherwise, leave the email alone.</li>
+        <li>Optional user notifications and release workflows are available.</li>
+      </ol>
+
+      <p class="mt-4"><strong>Protect mode</strong> provides the highest level of protection and scans email prior to delivery to the end user’s inbox. Leveraging the same SaaS email provider API’s and implementing mail flow rules Avanan can scan email with a best of breed security stack to protect end users from malware, data leaks, phishing attacks and more. Scanning and quarantining takes place before email is delivered to the user’s inbox. This mode insures that threats are detected and remediated before the user has access to the email.</p>
+
+      <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/API+Mailflow.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
+
+      <ol>
+        <li>Incoming email heads to the mail flow.</li>
+        <li>Avanan redirects the mail to the Avanan platform for scanning (10 sec - 5 min).</li>
+        <li>If malicious, Avanan takes action, otherwise, returns email to the mail flow.</li>
+        <li>User notifications and release workflows are defined in policy.</li>
+      </ol>
     </div>
 
     <div id="documentation" class="mb-9">
