@@ -98,12 +98,12 @@ div.code-toolbar > .toolbar a:hover {
 .anchorjs-link {
   padding-left: .5rem;
   font-size: 90%;
-  color: rgba(55,125,255, .5) !important;
+  color: rgba(86,155,190, .5) !important;
   transition: color .16s linear;
   opacity: 0;
 }
 .anchorjs-link:hover {
-  color: rgba(55,125,255, 1) !important;
+  color: rgba(86,155,190, 1) !important;
 }
 h2:hover .anchorjs-link,
 h3:hover .anchorjs-link,
