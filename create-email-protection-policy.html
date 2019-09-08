@@ -27,6 +27,217 @@
 
   <!-- CSS Front Doc -->
   <link rel="stylesheet" href="doc-assets/css/starter.css">
+
+  <style>
+  
+  body {
+    margin: 0;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #222222;
+    text-align: left;
+    background-color: #fff;
+  }
+  
+
+  small, .small {
+    font-size: 80% !important;
+    font-weight: 500 !important;
+  }
+  p {
+    color: #788487 !important;
+    line-height: 1.6 !important;
+    letter-spacing: 0 !important;
+    margin-bottom: 0 !important;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  ol {
+    margin-left: 30px;
+    list-style-type: decimal;
+  }
+  
+  li {
+    margin-top: 10px;
+  }
+  
+  ul {
+    margin-left: 30px;
+    list-style-type: disc;
+  }
+  
+  
+  .screenshot {
+    width: 70%;
+    box-shadow: 0px 0px 20px #656565;
+  }
+  
+  .code-snippet {
+    width: 70%;
+  }
+
+  /* PHONES IN PORTRAIT col-3 */
+  @media (max-width: 576px) {
+    .body-container-wrapper > .container-fluid {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+    }
+    
+    .screenshot {
+      width: 100%;
+    }
+    
+    .code-snippet {
+      width: 100%;
+    }
+    
+    #main-div {
+      margin-top: -150px;
+    }
+    
+    #content-div {
+      margin-top: -180px;
+    }
+    
+    #footer-div {
+      margin-top: -280px;
+    }
+
+  }
+
+  /* PHONES IN LANDSCAPE col-sm-3 */
+  @media (min-width: 576px) and (max-width: 768px) {
+    .screenshot {
+      width: 100%;
+    }
+    
+    .code-snippet {
+      width: 100%;
+    }
+    
+    #main-div {
+      margin-top: -150px;
+    }
+    
+    #content-div {
+      margin-top: -180px;
+    }
+    
+    #footer-div {
+      margin-top: -280px;
+    }
+
+  }
+
+  /* TABLETS col-md-3 */
+  @media (min-width: 768px) and (max-width: 992px) {
+    .screenshot {
+      width: 100%;
+    }
+    
+    .code-snippet {
+      width: 100%;
+    }
+    
+    #main-div {
+      margin-top: -220px;
+    }
+    
+    #content-div {
+      margin-top: -40px;
+    }
+    
+    #content-div {
+      margin-top: -40px;
+    }
+    
+    #footer-div {
+      margin-top: 100px;
+    }
+
+  }
+
+  /* LAPTOPS  col-lg-3 */
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .screenshot {
+      width: 70%;
+    }
+    
+    .code-snippet {
+      width: 70%;
+    }
+    
+    #main-div {
+      margin-top: -320px;
+    }
+    
+    #content-div {
+      margin-top: -40px;
+    }
+    
+    #footer-div {
+      margin-top: 150px;
+    }
+
+  }
+
+  /* DESKTOPS col-xl-3 */
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    .screenshot {
+        width: 70%;
+      }
+    
+    .code-snippet {
+      width: 70%;
+    }
+    
+    #main-div {
+      margin-top: -320px;
+    }
+    
+    #content-div {
+      margin-top: -40px;
+    }
+    
+    #footer-div {
+      margin-top: 150px;
+    }
+
+  }
+
+  /* LARGE DESKTOPS */
+  @media (min-width: 1500px) {
+    .screenshot {
+      width: 70%;
+    }
+    
+    .code-snippet {
+      width: 70%;
+    }
+    
+    #main-div {
+      margin-top: -320px;
+    }
+    
+    #content-div {
+      margin-top: -40px;
+    }
+    
+    #footer-div {
+      margin-top: 150px;
+    }
+
+  }
+  
+  .widget-module ul, .nav-tabs-icons, .footer-list {
+      list-style: none;
+      margin-left: 0px;
+  }
+  
+</style>
 </head>
 <body>
   <!-- ========== HEADER ========== -->
@@ -130,6 +341,7 @@
     </div>
 
     <div id="overview" class="mb-9">
+
       <h2 class="h4 mb-4">Part 1 – Policy Overview <a class="anchorjs-link" href="#policy-overview" data-anchorjs-icon="#"></a></h2>
       <p>The Avanan Cloud Security Platform offers the industry’s most complete cloud security solution with defense-in-depth capabilities to make your SaaS or IaaS both safe and compliant. We protect your users and files in any cloud environment, from Office365 to Gmail, Amazon to Azure. This guide describes Avanan’s group based policy frame work that can be leveraged to continuously help protect data that sits in the cloud.</p>
       <p>Avanan offers three modes of protection for email outlined below:</p>
@@ -139,6 +351,8 @@
         <li>Protect (Inline)</li>
       </ol>
       <p><strong>Monitor only</strong> mode provides visibility into the cloud-hosted email leveraging publicly available API’s and a journal entry from the SaaS email provider. Scan results are provided from 60+ best of breed security tools. In this mode manual and automated query based quarantines are available after delivery to the user mailbox.</p>
+
+      <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/API+Journal-Monitor-Only.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
     </div>
 
     <div id="documentation" class="mb-9">
