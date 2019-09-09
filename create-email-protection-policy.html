@@ -207,11 +207,9 @@
   <main class="hs-docs-content space-top-2 space-top-xl-3" role="main">
     <div class="border-bottom pb-6 mb-6">
       <h1 class="font-weight-bold">How to Create an Email Protection Policy</h1>
-      <p class="text-dark font-weight-normal mb-0" style="font-size: 1.125rem;">Get started with Front's components and options for laying out your Front project, including SVG components, powerful scripts, fully detailed documentation, and responsive design.</p>
     </div>
 
-    <div id="overview" class="mb-9">
-
+    <div id="policy-overview" class="mb-9">
       <h2 class="h4 mb-4">Part 1 – Policy Overview <a class="anchorjs-link" href="#policy-overview" data-anchorjs-icon="#"></a></h2>
       <p>The Avanan Cloud Security Platform offers the industry’s most complete cloud security solution with defense-in-depth capabilities to make your SaaS or IaaS both safe and compliant. We protect your users and files in any cloud environment, from Office365 to Gmail, Amazon to Azure. This guide describes Avanan’s group based policy frame work that can be leveraged to continuously help protect data that sits in the cloud.</p>
       <p>Avanan offers three modes of protection for email outlined below:</p>
@@ -221,9 +219,7 @@
         <li>Protect (Inline)</li>
       </ol>
       <p><strong>Monitor Only mode</strong> provides visibility into the cloud-hosted email leveraging publicly available API’s and a journal entry from the SaaS email provider. Scan results are provided from 60+ best of breed security tools. In this mode manual and automated query based quarantines are available after delivery to the user mailbox.</p>
-
       <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/API+Journal-Monitor-Only.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
-
       <ol>
         <li>Incoming email passes through email provider’s spam filter. Emails are sorted accordingly,</li>
         <ol type="a">
@@ -233,22 +229,16 @@
         </ol>
         <li>Manual and automated query based quarantines are available after delivery to the user mailbox.</li>
       </ol>
-
       <p class="mt-4"><strong>Detect and Protect mode</strong> provides an increased level of protection that scans email via journaling leveraging the same SaaS email provider API’s. This mode adds an automated policy action to quarantine malware, phishing attacks etc. based on the results of the best of breed security stack. In this mode user notifications and release workflows are available.</p>
-
       <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/API+Journal.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
-
       <ol>
         <li>Incoming email arrives in respective mailbox folder.</li>
         <li>Avanan detects new email and scans (10 sec - 5 min).</li>
         <li>If malicious, Avanan takes automatic action, otherwise, leave the email alone.</li>
         <li>Optional user notifications and release workflows are available.</li>
       </ol>
-
       <p class="mt-4"><strong>Protect mode</strong> provides the highest level of protection and scans email prior to delivery to the end user’s inbox. Leveraging the same SaaS email provider API’s and implementing mail flow rules Avanan can scan email with a best of breed security stack to protect end users from malware, data leaks, phishing attacks and more. Scanning and quarantining takes place before email is delivered to the user’s inbox. This mode insures that threats are detected and remediated before the user has access to the email.</p>
-
       <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/API+Mailflow.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
-
       <ol>
         <li>Incoming email heads to the mail flow.</li>
         <li>Avanan redirects the mail to the Avanan platform for scanning (10 sec - 5 min).</li>
@@ -257,9 +247,37 @@
       </ol>
     </div>
 
-    <div id="documentation" class="mb-9">
-      <h2 class="h4 mb-4">Documentation <a class="anchorjs-link" href="#documentation" data-anchorjs-icon="#"></a></h2>
-      <p>If you are looking to quickly add Front to your project, head to our <a href="../documentation/index.html">Documentation</a> page and start exploring the powerful advantages of Front.</p>
+
+    <div id="policy-configuration" class="mb-9">
+      <h2 class="h4 mb-4">Part 2 – Policy Configuration <a class="anchorjs-link" href="#policy-configuration" data-anchorjs-icon="#"></a></h2>
+      <p>Before group based policy is configured you must configure a dedicated quarantine mailbox that will be used to store any emails or attachments that are quarantined during the scanning process by policy or via manual actions. The configuration is located under the Cloud App Store under your cloud-based email platform. This must be a full licensed mailbox it cannot be a shared mailbox.</p>
+      <p>You must also specify a restore request approver email account. This will be a current administrator in the Avanan platform. This account is used to notify administrators when there is a user requesting an email to be released from quarantine.</p>
+      <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/office-2.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
+      <p class="mt-4">Email policy is configured from the policy console location on the left-hand panel of the Avanan dashboard.</p>
+      <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/avanan-wide.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
+      <h6 class="mt-4">Step 1</h6>
+      <p>Select the SaaS platform you want to set policy for Office 365 Emails or Gmail. Click the + to configure a new policy.</p>
+      <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/O365-narrow.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
+      <h6 class="mt-4">Step 2</h6>
+      <p>Select the Threat detection for security. Threat detection will cover AV, Malware and Phishing protection in the policy.</p>
+      <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/step-2.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
+      <h6 class="mt-4">Step 3</h6>
+      <p>Rule State should be set to running and you can change the default name of the rule. Severity can be set to Auto or a predetermined level. You must also select the desired mode Monitor Only, Detect and Protect or Protect (Inline).</p>
+      <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/step-3.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
+      <h6 class="mt-4">Step 4</h6>
+      <p>Select the scope of users and/or groups to be covered by the policy. All users can be protected by selecting all users and groups.</p>
+      <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/step-4.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
+      <h6 class="mt-4">Step 5</h6>
+      <p>Under the advanced tab you can select the security tools that are running for this specific policy. Available security tools are configured in the Security App Store under configuration.</p>
+      <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/step-5c.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
+      <p class="mt-4">Note - If you select either Detect and Protect or Protect (Inline) mode you will see additional configuration screens that allow customization of the user level email notifications in the advanced configuration. Workflow and Notification options are outlined in the next section.</p>
+      <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/step-5b.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
+      <h6 class="mt-4">Step 6</h6>
+      <p>Alerts can be configured to be sent to the configured Administrators, (Admins can opt in under user management) or to specified email addresses. Alerts are available separately for Malware and Phishing. Email alert templates can be customized by clicking on the gears to the right of the alert.</p>
+      <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/step-6.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
+      <h6 class="mt-4">Step 7</h6>
+      <p>Once the policy is configured hit the Save and Apply button to apply the policy to the configure user population. Policies are based on precedence so make sure your rules are applied in the proper order. The order can be adjusted from the policy console.</p>
+      <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/step-7.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
     </div>
 
     <div id="support" class="mb-9">
