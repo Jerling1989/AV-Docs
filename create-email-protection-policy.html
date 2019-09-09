@@ -210,7 +210,7 @@
     </div>
 
     <div id="policy-overview" class="mb-9">
-      <h2 class="h4 mb-4">Part 1 – Policy Overview <a class="anchorjs-link" href="#policy-overview" data-anchorjs-icon="#"></a></h2>
+      <h2 class="h4 mb-4">Part 1 — Policy Overview <a class="anchorjs-link" href="#policy-overview" data-anchorjs-icon="#"></a></h2>
       <p>The Avanan Cloud Security Platform offers the industry’s most complete cloud security solution with defense-in-depth capabilities to make your SaaS or IaaS both safe and compliant. We protect your users and files in any cloud environment, from Office365 to Gmail, Amazon to Azure. This guide describes Avanan’s group based policy frame work that can be leveraged to continuously help protect data that sits in the cloud.</p>
       <p>Avanan offers three modes of protection for email outlined below:</p>
       <ol>
@@ -308,11 +308,19 @@
       <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/config-O365.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
     </div>
 
-    <div id="support" class="mb-9">
-      <h2 class="h4 mb-4">Support <a class="anchorjs-link" href="#support" data-anchorjs-icon="#"></a></h2>
-      <p>We try our very best to offer the most excellent support, and we always try everything within our power to assist our valued customers. It is worth to mention that our support mainly covers all design issues that one might encounter in addition to frontend-related issues as long as it is not complete customized work.</p>
-
-      <p>If you have any questions, please feel free to contact us at <a href="mailto:support@htmlstream.com">support@htmlstream.com</a> and we will do our best to get back to you within 24 hours. Sometimes it might take a bit longer, but we will do our best not to keep you waiting longer than 48 hours. You may also leave us a message through our social pages: <a target="_blank" href="https://www.facebook.com/htmlstream">Facebook</a> and <a target="_blank" href="https://twitter.com/htmlstream">Twitter</a></p>
+    <div id="end-user-experience" class="mb-9">
+      <h2 class="h4 mb-4">Part 2 — End-user experience <a class="anchorjs-link" href="#end-user-experience" data-anchorjs-icon="#"></a></h2>
+      <h6>Malware End-user workflow</h6>
+      <ul>
+        <li>1 - User is alerted and allowed to restore the email</li>
+      </ul>
+      <p>Email to the user is scanned and when found malicious the subject is replaced with a quarantined notice and the original subject is provided in brackets. The body of the message is replaced with a customizable message to the user along with a link to release the file if a false positive is suspected. The attachment is also stripped and noted in the replaced body. In this mode, the user is authorized to perform their own release of the attachment. Using the link in the email end-users can release quarantined attachment. The original email and attachment will be immediately delivered back to the inbox.</p>
+      <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/quarantined.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
+      <ul class="mt-4">
+        <li>2 - User is alerted, allowed to requests a restore. Admin must approve</li>
+      </ul>
+      <p>Email to the user is scanned and when found malicious the subject is replaced with a Quarantined notice and the original subject is provided in brackets. The body of the message is replaced with a customizable message to the user along with a link to release the file if a false positive is suspected. The attachment is also stripped and noted in the replaced body. The Malware will be zipped, password protected and delivered to the Restore request approver.</p>
+      <img class="screenshot" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/manuals/quarantined-2.png" style="display: block; margin-left: auto; margin-right: auto; box-shadow: none;">
     </div>
 
     <div id="about" class="mb-9">
