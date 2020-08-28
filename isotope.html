@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Avanan | ISOTOPE</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  <!-- GOOGLE FONTS LINK -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900idisplay=swap" rel="stylesheet">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="assets/css/doc-theme.css">
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="assets/css/docs.css">
+
+
+
+
+
+
+  <style type="text/css">
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    /* ---- input ---- */
+
+    input[type="text"] {
+      font-size: 20px;
+    }
+
+    /* ---- button ---- */
+
+    .button {
+      display: inline-block;
+      padding: 0.5em 1.0em;
+      background: #EEE;
+      border: none;
+      border-radius: 7px;
+      background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+      color: #222;
+      font-family: sans-serif;
+      font-size: 16px;
+      text-shadow: 0 1px white;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #8CF;
+      text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+      color: #222;
+    }
+
+    .button:active,
+    .button.is-checked {
+      background-color: #28F;
+    }
+
+    .button.is-checked {
+      color: white;
+      text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+    }
+
+    .button:active {
+      box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+    }
+
+    /* ---- button-group ---- */
+
+    .button-group:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .button-group .button {
+      float: left;
+      border-radius: 0;
+      margin-left: 0;
+      margin-right: 1px;
+    }
+
+    .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+    .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+    /* ---- isotope ---- */
+
+    .grid {
+      background: #EEE;
+      max-width: 1200px;
+    }
+
+    /* clear fix */
+    .grid:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    /* ui group */
+
+    .ui-group {
+      display: inline-block;
+    }
+
+    .ui-group h3 {
+      display: inline-block;
+      vertical-align: top;
+      line-height: 32px;
+      margin-right: 0.2em;
+      font-size: 16px;
+    }
+
+    .ui-group .button-group {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    /* color-shape */
+
+    .color-shape {
+      width: 70px;
+      height: 70px;
+      margin: 5px;
+      float: left;
+      text-shadow: 1px 1px white;
+      font-weight: bold;
+    }
+     
+    .color-shape.round {
+      border-radius: 35px;
+    }
+     
+    .color-shape.big.round {
+      border-radius: 75px;
+    }
+     
+    .color-shape.red { background: red; }
+    .color-shape.blue { background: blue; }
+    .color-shape.yellow { background: yellow; }
+     
+    .color-shape.wide, .color-shape.big { width: 150px; }
+    .color-shape.tall, .color-shape.big { height: 150px; }
+  </style>
+
+
+
+
+
+</head>
+
+<body>
+
+
+<h1>Isotope - combination filters &amp; search</h1>
+
+
+<p><input type="text" class="quicksearch" placeholder="Search" /></p>
+
+<div class="filters">
+
+  <div class="ui-group">
+    <h3>Color</h3>
+    <div class="button-group js-radio-button-group" data-filter-group="color">
+      <button class="button is-checked" data-filter="">any</button>
+      <button class="button" data-filter=".red">red</button>
+      <button class="button" data-filter=".blue">blue</button>
+      <button class="button" data-filter=".yellow">yellow</button>
+    </div>
+  </div>
+
+  <div class="ui-group">
+    <h3>Size</h3>
+    <div class="button-group js-radio-button-group" data-filter-group="size">
+      <button class="button is-checked" data-filter="">any</button>
+      <button class="button" data-filter=".small">small</button>
+      <button class="button" data-filter=".wide">wide</button>
+      <button class="button" data-filter=".big">big</button>
+      <button class="button" data-filter=".tall">tall</button>
+    </div>
+  </div>
+
+  <div class="ui-group">
+    <h3>Shape</h3>
+    <div class="button-group js-radio-button-group" data-filter-group="shape">
+      <button class="button is-checked" data-filter="">any</button>
+      <button class="button" data-filter=".round">round</button>
+      <button class="button" data-filter=".square">square</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="grid">
+  <div class="color-shape small round red">Hydrogen</div>
+  <div class="color-shape small round blue">Helium</div>
+  <div class="color-shape small round yellow">Lithium</div>
+  <div class="color-shape small square red">Beryllium</div>
+  <div class="color-shape small square blue">Boron</div>
+  <div class="color-shape small square yellow">Carbon</div>
+  <div class="color-shape wide round red">Nitrogen</div>
+  <div class="color-shape wide round blue">Oxygen</div>
+  <div class="color-shape wide round yellow">Fluorine</div>
+  <div class="color-shape wide square red">Neon</div>
+  <div class="color-shape wide square blue">Sodium</div>
+  <div class="color-shape wide square yellow">Magnesium</div>
+  <div class="color-shape big round red">Aluminum</div>
+  <div class="color-shape big round blue">Silicon</div>
+  <div class="color-shape big round yellow">Phosphorus</div>
+  <div class="color-shape big square red">Sulfur</div>
+  <div class="color-shape big square blue">Chlorine</div>
+  <div class="color-shape big square yellow">Argon</div>
+  <div class="color-shape tall round red">Potassium</div>
+  <div class="color-shape tall round blue">Calcium</div>
+  <div class="color-shape tall round yellow">Scandium</div>
+  <div class="color-shape tall square red">Titanium</div>
+  <div class="color-shape tall square blue">Vanadium</div>
+  <div class="color-shape tall square yellow">Chromium</div>
+</div>
+
+
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+  <script src="assets/vendor/popper.js/popper.min.js"></script>
+  <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+
+<script type="text/javascript">
+  // external js: isotope.pkgd.js
+
+// store filter for each group
+var buttonFilters = {};
+var buttonFilter;
+// quick search regex
+var qsRegex;
+
+// init Isotope
+var $grid = $('.grid').isotope({
+  itemSelector: '.color-shape',
+  filter: function() {
+    var $this = $(this);
+    var searchResult = qsRegex ? $this.text().match( qsRegex ) : true;
+    var buttonResult = buttonFilter ? $this.is( buttonFilter ) : true;
+    return searchResult && buttonResult;
+  },
+});
+
+$('.filters').on( 'click', '.button', function() {
+  var $this = $(this);
+  // get group key
+  var $buttonGroup = $this.parents('.button-group');
+  var filterGroup = $buttonGroup.attr('data-filter-group');
+  // set filter for group
+  buttonFilters[ filterGroup ] = $this.attr('data-filter');
+  // combine filters
+  buttonFilter = concatValues( buttonFilters );
+  // Isotope arrange
+  $grid.isotope();
+});
+
+// use value of search field to filter
+var $quicksearch = $('.quicksearch').keyup( debounce( function() {
+  qsRegex = new RegExp( $quicksearch.val(), 'gi' );
+  $grid.isotope();
+}) );
+
+// change is-checked class on buttons
+$('.button-group').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
+});
+  
+// flatten object by concatting values
+function concatValues( obj ) {
+  var value = '';
+  for ( var prop in obj ) {
+    value += obj[ prop ];
+  }
+  return value;
+}
+
+// debounce so filtering doesn't happen every millisecond
+function debounce( fn, threshold ) {
+  var timeout;
+  threshold = threshold || 100;
+  return function debounced() {
+    clearTimeout( timeout );
+    var args = arguments;
+    var _this = this;
+    function delayed() {
+      fn.apply( _this, args );
+    }
+    timeout = setTimeout( delayed, threshold );
+  };
+}
+
+</script>
+
+  
+</body>
+</html>
