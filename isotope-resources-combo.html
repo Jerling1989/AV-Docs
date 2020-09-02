@@ -232,7 +232,7 @@
       font-size: 15px;
       padding: 0;
       margin: 0;
-      color: #788487;
+      color: #949494;
       height: 27px;
       font-weight: normal;
     }
@@ -246,6 +246,10 @@
     div.item > p {
       color: #222;
       font-weight: bold;
+    }
+
+    div.option-set > label {
+      color: #949494;
     }
 
   </style>
@@ -335,13 +339,13 @@
 
 
     <div id="options">
-      <div class="option-set" data-group="brand">
+      <div class="option-set" data-group="type">
         <label><input type="checkbox" value=".brand1" /> brand1</label>
         <label><input type="checkbox" value=".brand2" /> brand2</label>
         <label><input type="checkbox" value=".brand3" /> brand3</label>
         <label><input type="checkbox" value=".brand4" /> brand4</label>
       </div>
-      <div class="option-set" data-group="type">
+      <div class="option-set" data-group="topic">
         <label><input type="checkbox" value=".alpha" /> alpha</label>
         <label><input type="checkbox" value=".beta" /> beta</label>
         <label><input type="checkbox" value=".gamma" /> gamma</label>
@@ -501,8 +505,8 @@ var filters = {};
 
 // only used to dynamically generate items
 var data = {
-  brands: [ 'brand1', 'brand2', 'brand3', 'brand4' ],
-  productTypes: [ 'alpha', 'beta', 'gamma', 'delta' ],
+  types: [ 'brand1', 'brand2', 'brand3', 'brand4' ],
+  topics: [ 'alpha', 'beta', 'gamma', 'delta' ],
   colors: [ 'red', 'blue', 'green', 'yellow' ],
   sizes: [ 'size8', 'size9', 'size10', 'size11' ],
 };
@@ -572,21 +576,21 @@ function getComboFilter() {
 
 // helper made to make items
 function createContent() {
-  var brand, productType, color, size;
+  var type, topic, color, size;
   var items = '';
   // dynamically create content
-  for (var i=0, len1 = data.brands.length; i < len1; i++) {
-    brand = data.brands[i];
-    for (var j=0, len2 = data.productTypes.length; j < len2; j++) {
-      productType = data.productTypes[j];
+  for (var i=0, len1 = data.topics.length; i < len1; i++) {
+    topic = data.topics[i];
+    for (var j=0, len2 = data.topics.length; j < len2; j++) {
+      topic = data.topics[j];
         for (var l=0, len3 = data.colors.length; l < len3; l++) {
         color = data.colors[l];
         for (var k=0, len4 = data.sizes.length; k < len4; k++) {
           size = data.sizes[k];
-          var itemHtml = '<div class="item ' + brand + ' ' +
-            productType + ' ' + color + ' ' + size + '">' +
-            '<p>' + brand + '</p>' +
-            '<p>' + productType + '</p>' +
+          var itemHtml = '<div class="item ' + type + ' ' +
+            topic + ' ' + color + ' ' + size + '">' +
+            '<p>' + type + '</p>' +
+            '<p>' + topic + '</p>' +
             '<p>' + size + '</p>' +
             '</div>';
             items += itemHtml;
