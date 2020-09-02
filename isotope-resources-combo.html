@@ -208,6 +208,46 @@
   
 </style>
 
+<style type="text/css">
+    body {
+      font-family: sans-serif;
+    }
+
+    .item {
+      width: 80px;
+      height: 80px;
+      padding: 5px;
+      margin: 5px;
+      color: white;
+      float: left;
+    }
+
+    label { margin-right: 5px; }
+
+    p {
+      margin: 0;
+    }
+
+    #filter-display {
+      font-size: 18px;
+      padding: 0.5em;
+      border: 1px solid #CCC;
+      color: blue;
+    }
+
+    .red { background: red; }
+    .blue { background: blue; }
+    .green { background: green; }
+    .yellow { background: yellow; color: black; }
+
+
+    div.item > p {
+      color: #222;
+      font-weight: bold;
+    }
+
+  </style>
+
 </head>
 
 
@@ -288,10 +328,40 @@
 
   <!-- Sidebar Nav -->
   <nav id="navside-accordion" class="hs-docs-navside collapse">
-<!--     <ul id="components" style="margin-bottom: 100px;" class="hs-docs-navside__links collapse show" data-parent="#navside-accordion">
 
-    </ul> -->
-    
+
+
+
+    <div id="options">
+  <div class="option-set" data-group="brand">
+    <label><input type="checkbox" value=".brand1" /> brand1</label>
+    <label><input type="checkbox" value=".brand2" /> brand2</label>
+    <label><input type="checkbox" value=".brand3" /> brand3</label>
+    <label><input type="checkbox" value=".brand4" /> brand4</label>
+  </div>
+  <div class="option-set" data-group="type">
+    <label><input type="checkbox" value=".alpha" /> alpha</label>
+    <label><input type="checkbox" value=".beta" /> beta</label>
+    <label><input type="checkbox" value=".gamma" /> gamma</label>
+    <label><input type="checkbox" value=".delta" /> delta</label>
+  </div>
+  <div class="option-set" data-group="color">
+    <label><input type="checkbox" value=".red" /> red</label>
+    <label><input type="checkbox" value=".blue" /> blue</label>
+    <label><input type="checkbox" value=".green" /> green</label>
+    <label><input type="checkbox" value=".yellow" /> yellow</label>
+  </div>
+  <div class="option-set" data-group="size">
+    <label><input type="checkbox" value=".size8" /> size8</label>
+    <label><input type="checkbox" value=".size9" /> size9</label>
+    <label><input type="checkbox" value=".size10" /> size10</label>
+    <label><input type="checkbox" value=".size11" /> size11</label>
+  </div>
+</div>
+
+
+
+
     <!-- Filter -->
     <ul id="cubeFilter" class="cbp-l-filters-alignCenter text-white" style="margin-bottom: 200px;">
       <li class="cbp-filter-item cbp-filter-item-active u-cubeportfolio__item mt-5 mb-2" style="text-transform: uppercase; margin-left: -12px; font: 400 .9375rem sans-serif;" data-filter="*">Show all</li>
@@ -318,6 +388,7 @@
     <!-- End Filter -->
   </nav>
   <!-- End Sidebar Nav -->
+
 </div>
 <!-- ========== END LEFT ========== -->
 
@@ -329,1098 +400,59 @@
 
   <div class="mb-9">
     
-    <div id="container" class="row">
-          
-    <!-- <div class="cbp mb-7" data-controls="#cubeFilter" data-animation="quicksand" data-x-gap="25" data-y-gap="25" data-load-more-selector="#cubeLoadMore" data-load-more-action="auto" data-load-items-amount="2" data-media-queries="[
-              {&quot;width&quot;: 1500, &quot;cols&quot;: 4},
-              {&quot;width&quot;: 1100, &quot;cols&quot;: 4},
-              {&quot;width&quot;: 800, &quot;cols&quot;: 3},
-              {&quot;width&quot;: 480, &quot;cols&quot;: 2},
-              {&quot;width&quot;: 300, &quot;cols&quot;: 1}
-            ]">  -->
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card shadow-soft webinar general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/webinars/avanan-symbol-webinar-ft.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Security Awareness and Email Security</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/resources/webinars/on-demand/security-awareness-and-email-security">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Aug 18, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card white-paper general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Content/Collateral/5-Questions-SEG-featured.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">  <span class="badge badge-pill badge-secondary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">White Paper</span>     
-      <h5 class="mb-0">5 Questions Your SEG Doesn't Want You to Ask </h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Content/Collateral/5-Questions-Your-SEG-Vendor-Hopes-You-Never-Ask(web).pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Aug 12, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card internal battle-cards office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Resources/internal/battle-cards/Reseller/Avanan-BattleCard-RESELLER%28EOP-ATP%29-cover.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     
-      <h5 class="mb-0">Avanan Battle Card (Reseller EOP/ATP)</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/internal/battle-cards/Reseller/Avanan-BattleCard-RESELLER(EOP-ATP).pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Aug 7, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card internal battle-cards general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Resources/internal/battle-cards/MSP/Avanan-BattleCard-MSP%28All-Competition%29-cover.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     
-      <h5 class="mb-0">Avanan Battle Card (MSP - All Competition)</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/internal/battle-cards/MSP/Avanan-BattleCard-MSP(All-Competition).pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Aug 7, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item --> 
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card internal battle-cards general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Resources/internal/battle-cards/MSP/Avanan-BattleCard-MSP%28API-Vendors%29-cover.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     
-      <h5 class="mb-0">Avanan Battle Card (MSP - Other API Vendors)</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/internal/battle-cards/MSP/Avanan-BattleCard-MSP(API-Vendors).pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Aug 7, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card internal battle-cards office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Resources/internal/battle-cards/MSP/Avanan-BattleCard-MSP%28EOP-ATP%29-cover.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     
-      <h5 class="mb-0">Avanan Battle Card (MSP EOP/ATP)</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/internal/battle-cards/MSP/Avanan-BattleCard-MSP(EOP-ATP).pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Aug 7, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card internal battle-cards general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Resources/internal/battle-cards/Reseller/Avanan-BattleCard-RESELLER%28API-Vendors%29-cover.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     
-      <h5 class="mb-0">Avanan Battle Card (Reseller - Other API Vendors)</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/internal/battle-cards/Reseller/Avanan-BattleCard-RESELLER(API-Vendors).pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Aug 7, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card internal battle-cards general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Resources/internal/battle-cards/MSP/Avanan-BattleCard-MSP%28SEG-MTA%29-cover.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     
-      <h5 class="mb-0">Avanan Battle Card (MSP SEG/MTA)</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/internal/battle-cards/MSP/Avanan-BattleCard-MSP(SEG-MTA).pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Aug 7, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card internal battle-cards general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Resources/internal/battle-cards/Reseller/Avanan-BattleCard-RESELLER%28All-Competition%29-cover.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     
-      <h5 class="mb-0">Avanan Battle Card (Reseller - All Competition)</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/internal/battle-cards/Reseller/Avanan-BattleCard-RESELLER(All-Competition).pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Aug 6, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card internal battle-cards general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Resources/internal/battle-cards/Reseller/Avanan-BattleCard-RESELLER%28SEG-MTA%29-cover.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     
-      <h5 class="mb-0">Avanan Battle Card (Reseller - SEG MTA)</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/internal/battle-cards/Reseller/Avanan-BattleCard-RESELLER(SEG-MTA).pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Aug 6, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card case-study office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/resources/case-studies/mimecast-replacement-case-study-cover.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">   <span class="badge badge-pill badge-success" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Case Study</span>    
-      <h5 class="mb-0">Why This Benefits Administration Company Finally Gave up on Mimecast</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/docs/Mimecast-Replacement-Case-Study.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jul 27, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card case-study office-365 security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/resources/case-studies/proofpoint-replacement-case-study-cover.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">   <span class="badge badge-pill badge-success" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Case Study</span>    
-      <h5 class="mb-0">Why This Biotech Research Firm Replaced Proofpoint to Protect Microsoft Office 365</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/docs/Proofpoint-Replacement-Case-Study.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jul 24, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card internal general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/resources/gartner/Avanan-vs-Symantec%28Gartner%29.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     
-      <h5 class="mb-0">Gartner: Avanan vs Symantec (Broadcom)</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/website/resources/gartner/Avanan-vs-Broadcom(Gartner).pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jul 10, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card internal general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/resources/gartner/Avanan-vs-Mimecast-vs-Proofpoint%28Gartner%29.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     
-      <h5 class="mb-0">Gartner: Avanan vs Mimecast vs Proofpoint</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/website/resources/gartner/Avanan-vs-Mimecast-vs-Proofpoint(Gartner).pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jul 10, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card internal general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/resources/gartner/Avanan-vs-Proofpoint%28Gartner%29.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     
-      <h5 class="mb-0">Gartner: Avanan vs Proofpoint</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/website/resources/gartner/Avanan-vs-Proofpoint(Gartner).pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jul 10, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card internal general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/resources/gartner/Avanan-vs-Barracuda%28Gartner%29.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     
-      <h5 class="mb-0">Gartner: Avanan vs Barracuda</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/website/resources/gartner/Avanan-vs-Barracuda(Gartner).pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jul 10, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card internal general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/resources/gartner/Avanan-vs-Microsoft%28Gartner%29.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     
-      <h5 class="mb-0">Gartner: Avanan vs Microsoft (EOP + ATP)</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/website/resources/gartner/Avanan-vs-Microsoft(Gartner).pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jul 10, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card internal general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/resources/gartner/Avanan-vs-Mimecast%28Gartner%29.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     
-      <h5 class="mb-0">Gartner: Avanan vs Mimecast</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/website/resources/gartner/Avanan-vs-Mimecast(Gartner).pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jul 10, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/api-security-blog.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">API-Based Security: We Prevent. They Respond.</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/blog/api-based-security-we-prevent-they-respond">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jun 30, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar messaging-apps">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/webinars/Slack-and-Teams-recording.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Collaboration Security: Introducing Malware, Phishing and Data Leak Protection for Slack &amp; Teams</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/resources/webinars/on-demand/slack-teams-security">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jun 11, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card solution-brief security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/docs/Avanan-Incident-Response-as-a-Service-cover.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5"> <span class="badge badge-pill badge-primary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Soltuion Brief</span>      
-      <h5 class="mb-0">Avanan Incident Response-as-a-Service</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/docs/downloads/Avanan-Incident-Response-as-a-Service.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jun 5, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card solution-brief partners">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/pages/Why-Partner-with-Avanan-Reseller%28cover%29.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5"> <span class="badge badge-pill badge-primary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Soltuion Brief</span>      
-      <h5 class="mb-0">Why Partner with Avanan (Reseller)</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/docs/downloads/Why-Partner-with-Avanan-Reseller.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jun 5, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage partners">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/become-a-reseller-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Become a Reseller</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/reseller-program">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jun 5, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/iraas-ft.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Avanan Incident Response as a Service (IRaaS)</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/resources/webinars/on-demand/incident-response-as-a-service">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jun 4, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card solution-brief messaging-apps">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/pages/Slack-Solution-Brief-2020-cover.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5"> <span class="badge badge-pill badge-primary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Soltuion Brief</span>      
-      <h5 class="mb-0">Avanan Security for Slack</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/docs/downloads/Slack-Solution-Brief-2020.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jun 2, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card solution-brief messaging-apps">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/pages/Avanan-for-Microsoft-Teams-cover.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5"> <span class="badge badge-pill badge-primary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Soltuion Brief</span>      
-      <h5 class="mb-0">Avanan Security for Microsoft Teams</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/docs/downloads/Avanan-for-Microsoft-Teams.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jun 2, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage messaging-apps">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/slack-security-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Slack Security</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/slack-security">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jun 2, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage messaging-apps">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/microsoft-teams-security-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Microsoft Teams Security</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/teams-security">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jun 2, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/iraas-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Incident Response-as-a-Service</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/iraas">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">May 27, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card solution-brief office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/docs/Avanan-Security-for-Office-365-cover.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5"> <span class="badge badge-pill badge-primary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Soltuion Brief</span>      
-      <h5 class="mb-0">Avanan Security for Office 365</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/docs/downloads/Avanan-Security-for-Office-365.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">May 12, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card solution-brief g-suite">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/docs/Avanan-Security-for-G-Suite-cover.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5"> <span class="badge badge-pill badge-primary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Soltuion Brief</span>      
-      <h5 class="mb-0">Avanan Security for G Suite</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/docs/downloads/Avanan-Security-for-G-Suite.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">May 12, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/webinars/How-to-Fool-Microsoft-ondemand.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">How to Fool Microsoft: Evolution of An Attack</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/resources/webinars/on-demand/how-to-fool-microsoft">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">May 5, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/office-365-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Office 365 Security</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/office-365-security">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">May 1, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/anti-phishing-software-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Anti-Phishing Software</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/anti-phishing-software">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">May 1, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/webinars/atp-web-briefing-2020.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Key Findings from the 2020 Microsoft ATP Report</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/resources/webinars/on-demand/2020-microsoft-atp-report">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Apr 16, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar partners">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/webinars/MSP-Webinar-Featured.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Avanan MSP-Focused Technology and Partnership Program</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/resources/webinars/on-demand/msp-technology-and-partner-program">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Mar 26, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card white-paper office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/featured/atp-wp-featured-sm.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">  <span class="badge badge-pill badge-secondary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">White Paper</span>     
-      <h5 class="mb-0">2020 Microsoft ATP Report</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Content/Collateral/2020-ATP-Report(web).pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Mar 10, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/office-365-malware-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Office 365 Malware Protection</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/office-365-security/malware-protection">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Feb 26, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card solution-brief gov-edu">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/docs/Avanan-for-EDU-Cover.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5"> <span class="badge badge-pill badge-primary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Soltuion Brief</span>      
-      <h5 class="mb-0">Avanan Security for EDU</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Content/Collateral/Avanan-for-EDU-Solution-Brief.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Feb 25, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage gov-edu">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/avanan-for-edu-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Avanan Protects Educational Institutions from Advanced Threats</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/edu">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Feb 18, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage partners">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/msp-sign-up-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">MSP Program</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/msp-program">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Feb 7, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card solution-brief partners">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/pages/Why-Partner-with-Avanan-%28MSP%29-cover.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5"> <span class="badge badge-pill badge-primary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Soltuion Brief</span>      
-      <h5 class="mb-0">Why Partner with Avanan (MSP)</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/docs/downloads/Why-Partner-with-Avanan-MSP.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jan 30, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/catch-what-others-miss-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Catch Advanced Threats That Others Miss</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/catch-what-others-miss">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jan 30, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/office-365-anti-phishing-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Office 365 Anti-Phishing</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/office-365-security/anti-phishing">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jan 30, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar gov-edu">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/blog/featured/Osterman-Webinar-index.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Securing Office 365 for State and Local Government</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/resources/webinars/on-demand/cyber-security-for-government">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jan 28, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/why-avanan-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Why Avanan?</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/why-avanan">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jan 13, 2020</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/patented-technology-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Avanan Patented Technology</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/patented-technology">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Dec 31, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/avanan-atp-comparison-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Office 365 Advanced Threat Protection Comparison</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/office-365-advanced-threat-protection-comparison">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Dec 31, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/GPI-2019-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Gartner Peer Insights Customers Choice</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/gartner-peer-insights">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Dec 20, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/how-it-works-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">How Avanan Works</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/how-it-works">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Dec 19, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/cloud-security-glossary-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Cloud Security Glossary</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/resources/glossary">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Dec 17, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/avanan-pricing-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Avanan Pricing</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/pricing">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Dec 13, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card white-paper gov-edu">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/docs/Osterman-White-Paper-ft.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">  <span class="badge badge-pill badge-secondary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">White Paper</span>     
-      <h5 class="mb-0">Cyber Security Best Practices for Government</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Content/Collateral/Cyber-Security-in-Government-Avanan.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Dec 12, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage partners">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/avanan-resellers-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Avanan Resellers</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/resellers">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Dec 6, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card white-paper security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/pages/impact-brief-featured.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">  <span class="badge badge-pill badge-secondary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">White Paper</span>     
-      <h5 class="mb-0">Email Security: The Biggest Problem You're Not Paying Attention To</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Content/Collateral/451-Avanan-Business-Impact-Brief.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Dec 5, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Images/Webinars/email-biggest-problem-sans-btn.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Email Security: The Biggest Problem You're Not Paying Attention To</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/resources/webinars/on-demand/email-security-biggest-problem">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Dec 5, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/office-365-dlp-compliance-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Office 365 DLP &amp; Compliance</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/office-365-security/data-loss-prevention">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Dec 4, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webpage general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/screenshot/avanan-compare-page.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">      <span class="badge badge-pill badge-info" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webpage</span> 
-      <h5 class="mb-0">Avanan Compartive Matrix</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/compare">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Nov 22, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/featured/dmarcian-featured-img.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">The 7 Measures Breached Organizations Wish They Had in Place Before an Attack</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/resources/webinars/on-demand/breached-organizations">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Oct 29, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card infographic general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/infographics/Phishing-Infographic-Featured-new.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">    <span class="badge badge-pill badge-danger" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Infographic</span>   
-      <h5 class="mb-0">How Email Became the Weakest Link</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/resources/infographics/how-email-became-the-weakest-link">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Oct 25, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/webinars/3-security-flaws-in-ATP-ft.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">3 Security Flaws in Advanced Threat Protection (ATP) That Microsoft Isn't Fixing</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/resources/webinars/on-demand/atp-security-flaws">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Sep 26, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card solution-brief security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hs-fs/hubfs/Resources/solution%20briefs/DLP-solution-brief/DLP-doc-cover.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5"> <span class="badge badge-pill badge-primary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Soltuion Brief</span>      
-      <h5 class="mb-0">Avanan DLP for the Cloud</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/docs/downloads/Avanan-DLP-for-the-Cloud.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Sep 17, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar gov-edu">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/blog/featured/EDU-webinar-recording-featured.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Make EDUs a No Phishing Zone with Avanan</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/webinar-recording-make-edu-no-phishing-zone">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Aug 22, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Images/Webinars/why-avanan-featured.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Why Avanan Catches What Others Miss</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/webinar-recording-why-avanan-catches">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jul 23, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card infographic security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/website/img/infographics/history-of-phishing-feat.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">    <span class="badge badge-pill badge-danger" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Infographic</span>   
-      <h5 class="mb-0">The History and Future of Phishing</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/resources/infographics/the-history-and-future-of-phishing">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jul 2, 2019</small></div>
+    <!-- Content -->
+    <div id="container" style="position: relative; height: 1170px;">
+      <div class="item brand1 alpha red size8" style="position: absolute; left: 0px; top: 0px;">
+        <p>brand1</p><p>alpha</p><p>size8</p>
       </div>
+      <div class="item brand2 beta red size9" style="position: absolute; left: 90px; top: 0px;">
+        <p>brand2</p><p>beta</p><p>size9</p>
       </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Images/Webinars/gpr-webinar-featured.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Key Findings from the 2019 Global Phish Report</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/web-briefing-recording-gpr">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">May 21, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/0365-vs-gsuite-featured.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Office 365 vs G Suite - Which Is More Secure?</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/webinar-recording-0365-vs-gsuite">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Apr 25, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card white-paper security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Global-Phish-Report-blog.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">  <span class="badge badge-pill badge-secondary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">White Paper</span>     
-      <h5 class="mb-0">2019 Avanan Global Phish Report</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/2019-Global-Phish-Report.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Apr 9, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card case-study gov-edu">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Screen%20Shot%202019-02-08%20at%204.34.32%20PM.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">   <span class="badge badge-pill badge-success" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Case Study</span>    
-      <h5 class="mb-0">Protecting Bethel School Disrict from Phishing and Malware with Avanan</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/Resources/docs/Customer-Success-Story-Avanan-Bethel-School-District.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Mar 22, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/marketing/website/jacob_redesign/webinar_pics/dlp-webinar-featured.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Preventing Data Leakage in a Cloud Environment</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/webinar-recording-dlp">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Mar 21, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/marketing/website/jacob_redesign/webinar_pics/mta-webinar-featured.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Why MTAs Are Yesterday's Technology</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/webinar-recording-mta">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Feb 26, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card white-paper office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/marketing/website/jacob_redesign/white-papers/atp-wp-featured.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">  <span class="badge badge-pill badge-secondary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">White Paper</span>     
-      <h5 class="mb-0">How Avanan Compares to Microsoft ATP</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/marketing/website/white-papers/How-Avanan-Compares-to-Microsoft-ATP.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Feb 14, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/marketing/website/jacob_redesign/webinar_pics/avanan-vs-atp-web-ft.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">How ATP Compares to Avanan</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/webinar-recording-avanan-vs-atp">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jan 24, 2019</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar messaging-apps">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/marketing/website/jacob_redesign/webinar_pics/slack-webinar-ft.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Securing Slack (2018)</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/webinar-recording-securing-slack">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Dec 6, 2018</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card case-study general-info">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/marketing/website/jacob_redesign/case_studies/service-source-ft.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">   <span class="badge badge-pill badge-success" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Case Study</span>    
-      <h5 class="mb-0">ServiceSource Secures the Cloud with Avanan</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/docs/Avanan-ServiceSource-case-study.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Oct 5, 2018</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/marketing/website/jacob_redesign/webinar_pics/HIPAA-webinar-featured.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">HIPAA Compliance in the Cloud</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/recording-hipaa-compliance-cloud">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Oct 4, 2018</small></div>
-      </div>
+      <div class="item brand3 gamma red size10" style="position: absolute; left: 180px; top: 0px;">
+        <p>brand3</p><p>gamma</p><p>size10</p>
       </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card white-paper security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/docs/HIPAA/HIPAA-WP-Featured.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">  <span class="badge badge-pill badge-secondary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">White Paper</span>     
-      <h5 class="mb-0">HIPAA Compliance in the Cloud</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/docs/HIPAA/HIPAA-White-Paper.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Sep 27, 2018</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card white-paper security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/docs/cloud%20account%20takeover%20wp/cloud%20account%20takeover%20featured.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">  <span class="badge badge-pill badge-secondary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">White Paper</span>     
-      <h5 class="mb-0">Cloud Account Takeover</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/docs/cloud-account-takeover-wp/Cloud-Takeover-White-Paper.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Sep 27, 2018</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card white-paper security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/marketing/website/secure-your-saas-wp-ft.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">  <span class="badge badge-pill badge-secondary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">White Paper</span>     
-      <h5 class="mb-0">Secure Your SaaS from Malicious Links</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/docs/Secure_Your_SaaS_from_Malicious_Links.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Sep 27, 2018</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card white-paper security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Phishing-Cover-Resources.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">  <span class="badge badge-pill badge-secondary" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">White Paper</span>     
-      <h5 class="mb-0">Phishing in the Age of SaaS</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/docs/Phishing_in_the_Age_of_SaaS.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Sep 27, 2018</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/marketing/website/jacob_redesign/webinar_pics/o365-from-inside-featured.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Securing Office 365 from the Inside</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/recording-securing-o365-inside">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Sep 27, 2018</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Webinar%20Cover/CASB-Webinar1.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">What to look for in a CASB</h5>
+      <div class="item brand4 delta red size11" style="position: absolute; left: 270px; top: 0px;">
+        <p>brand4</p><p>delta</p><p>size11</p>
       </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/recording-what-to-look-for-in-a-casb">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Aug 23, 2018</small></div>
+      <div class="item brand1 alpha blue size8" style="position: absolute; left: 360px; top: 0px;">
+        <p>brand1</p><p>alpha</p><p>size8</p>
       </div>
+      <div class="item brand2 beta blue size9" style="position: absolute; left: 450px; top: 0px;">
+        <p>brand2</p><p>beta</p><p>size9</p>
       </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Webinar%20Cover/Secure%20Your%20Enterprise%20Cloud%20Series/Securing%20O365%20featured.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Securing Office 365</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/recording-securing-office-365">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jul 26, 2018</small></div>
-      </div>
-      </div>
-      <!-- End Item -->  
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar g-suite">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Webinar%20Cover/Secure%20Your%20Enterprise%20Cloud%20Series/Securing%20Google%20G%20Suite%20Featured.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Securing Google G Suite</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/recording-securing-google-g-suite">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jun 21, 2018</small></div>
-      </div>
-      </div>
-      <!-- End Item --> 
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Webinar%20Cover/Secure%20Your%20Enterprise%20Cloud%20Series/securing%20cloud%20infrastructure%20featured.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Securing Cloud Infrastructure</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/recording-securing-cloud-infrastructure">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">May 17, 2018</small></div>
-      </div>
+      <div class="item brand3 gamma blue size10" style="position: absolute; left: 540px; top: 0px;">
+        <p>brand3</p><p>gamma</p><p>size10</p>
       </div>
-      <!-- End Item --> 
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card webinar security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/Webinar%20Cover/Secure%20Your%20Enterprise%20Cloud%20Series/cloud%20takeover%20protection%20featured.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">     <span class="badge badge-pill badge-warning" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Webinar</span>  
-      <h5 class="mb-0">Cloud Takeover Protection</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/recording-cloud-takeover-protection">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Apr 26, 2018</small></div>
-      </div>
-      </div>
-      <!-- End Item --> 
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card case-study security">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/marketing/website/jacob_redesign/case_studies/capital-caring-ft.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">   <span class="badge badge-pill badge-success" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Case Study</span>    
-      <h5 class="mb-0">Coud Email Security for Healthcare: Capital Caring</h5>
+      <div class="item brand4 delta blue size11" style="position: absolute; left: 540px; top: 0px;">
+        <p>brand4</p><p>delta</p><p>size10</p>
       </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/docs/Capital-Caring-Case-Study.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Mar 6, 2018</small></div>
+      <div class="item brand1 alpha green size8" style="position: absolute; left: 360px; top: 0px;">
+        <p>brand1</p><p>alpha</p><p>size8</p>
       </div>
+      <div class="item brand2 beta green size9" style="position: absolute; left: 450px; top: 0px;">
+        <p>brand2</p><p>beta</p><p>size9</p>
       </div>
-      <!-- End Item --> 
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card case-study office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/marketing/website/jacob_redesign/case_studies/consulting-case-study-ft.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">   <span class="badge badge-pill badge-success" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Case Study</span>    
-      <h5 class="mb-0">Consulting Firm Secures Office 365 Mail with Avanan</h5>
-      </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/AVANAN_CaseStudy_Consulting_Firm.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Mar 1, 2017</small></div>
-      </div>
+      <div class="item brand3 gamma green size10" style="position: absolute; left: 540px; top: 0px;">
+        <p>brand3</p><p>gamma</p><p>size10</p>
       </div>
-      <!-- End Item --> 
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card case-study office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/marketing/website/jacob_redesign/case_studies/alex-case-study-ft.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">   <span class="badge badge-pill badge-success" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Case Study</span>    
-      <h5 class="mb-0">Alternative Experts Secures Office 365 with Avanan</h5>
+      <div class="item brand4 delta green size11" style="position: absolute; left: 540px; top: 0px;">
+        <p>brand4</p><p>delta</p><p>size10</p>
       </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/docs/AVANAN_Case_Study_ALEX_O365.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Jan 10, 2017</small></div>
+      <div class="item brand1 alpha yellow size8" style="position: absolute; left: 360px; top: 0px;">
+        <p>brand1</p><p>alpha</p><p>size8</p>
       </div>
-      </div>
-      <!-- End Item --> 
-
-      <!-- Item -->
-      <div class="col-md-3 mb-4">
-      <div style="border: 1px solid #cdcdcd;" class="card case-study office-365">
-      <div class="card-img-top" style="background-image: url('https://www.avanan.com/hubfs/marketing/website/jacob_redesign/webinar_pics/top-office-365-webinar-ft.png'); height: 235px; background-position: center; background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #f8f9fa;">&nbsp;</div>
-      <div class="card-body p-5">   <span class="badge badge-pill badge-success" style="padding: 5px 10px; font-size: 11px; font-weight: 400;">Case Study</span>    
-      <h5 class="mb-0">Accounting Firm Secures Office 365 with Avanan</h5>
+      <div class="item brand2 beta yellow size9" style="position: absolute; left: 450px; top: 0px;">
+        <p>brand2</p><p>beta</p><p>size9</p>
       </div>
-      <div class="card-footer bg-light border-0 py-4 px-5"><a target="_blank" rel="noopener" href="https://www.avanan.com/hubfs/docs/Avanan-Case-Study-Accounting-Firm-Secures-Office-365.pdf">View Now <small class="fas fa-arrow-right ml-1"></small></a> <small style="float: right; color: #788487; font-style: italic;">Dec 14, 2016</small></div>
+      <div class="item brand3 gamma yellow size10" style="position: absolute; left: 540px; top: 0px;">
+        <p>brand3</p><p>gamma</p><p>size10</p>
       </div>
+      <div class="item brand4 delta yellow size11" style="position: absolute; left: 540px; top: 0px;">
+        <p>brand4</p><p>delta</p><p>size10</p>
       </div>
-      <!-- End Item --> 
+    </div>
+    <!-- End Content -->
 
-  </div>
-  <!-- End Content -->
   </div>
   
 </main>
