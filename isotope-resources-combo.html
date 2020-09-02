@@ -249,7 +249,9 @@
     }
 
     div.option-set > label {
+      font: 400 14px/21px "Open Sans", sans-serif;
       color: #949494;
+      display: block;
     }
 
   </style>
@@ -337,27 +339,33 @@
 
 
 
-
-    <div id="options">
+    <div style="padding-left: 40px;" id="options">
+      <div class="option-set" data-group="all">
+        <label style="font-size: .9375rem;" class="mt-5 mb-2 text-white">SHOW ALL</label>
+      </div>
       <div class="option-set" data-group="type">
+        <label style="font-size: .9375rem;" class="mt-5 mb-2 text-white">RESOURCE TYPES</label>
         <label><input type="checkbox" value=".brand1" /> brand1</label>
         <label><input type="checkbox" value=".brand2" /> brand2</label>
         <label><input type="checkbox" value=".brand3" /> brand3</label>
         <label><input type="checkbox" value=".brand4" /> brand4</label>
       </div>
       <div class="option-set" data-group="topic">
+        <label style="font-size: .9375rem;" class="mt-5 mb-2 text-white">RESOURCE TOPICS</label>
         <label><input type="checkbox" value=".alpha" /> alpha</label>
         <label><input type="checkbox" value=".beta" /> beta</label>
         <label><input type="checkbox" value=".gamma" /> gamma</label>
         <label><input type="checkbox" value=".delta" /> delta</label>
       </div>
       <div class="option-set" data-group="competitor">
+        <label style="font-size: .9375rem;" class="mt-5 mb-2 text-white">COMPETITION</label>
         <label><input type="checkbox" value=".red" /> red</label>
         <label><input type="checkbox" value=".blue" /> blue</label>
         <label><input type="checkbox" value=".green" /> green</label>
         <label><input type="checkbox" value=".yellow" /> yellow</label>
       </div>
       <div class="option-set" data-group="tool">
+        <label style="font-size: .9375rem;" class="mt-5 mb-2 text-white">SALES TOOLS</label>
         <label><input type="checkbox" value=".size8" /> size8</label>
         <label><input type="checkbox" value=".size9" /> size9</label>
         <label><input type="checkbox" value=".size10" /> size10</label>
@@ -367,9 +375,8 @@
 
 
 
-
-    <!-- Filter -->
-    <ul id="cubeFilter" class="cbp-l-filters-alignCenter text-white" style="margin-bottom: 200px;">
+    <!-- Cube Filter -->
+    <!-- <ul id="cubeFilter" class="cbp-l-filters-alignCenter text-white" style="margin-bottom: 200px;">
       <li class="cbp-filter-item cbp-filter-item-active u-cubeportfolio__item mt-5 mb-2" style="text-transform: uppercase; margin-left: -12px; font: 400 .9375rem sans-serif;" data-filter="*">Show all</li>
       <li style="list-style-type: none; text-align: left;" class="mt-5 mb-2">RESOURCE TYPES</li>
       <li class="cbp-filter-item u-cubeportfolio__item" data-filter=".solution-brief">Solution Brief</li>
@@ -378,7 +385,6 @@
       <li class="cbp-filter-item u-cubeportfolio__item" data-filter=".infographic">Infographic</li>
       <li class="cbp-filter-item u-cubeportfolio__item" data-filter=".webinar">Webinar</li>
       <li class="cbp-filter-item u-cubeportfolio__item" data-filter=".webpage">Webpage</li>
-      <!-- <li class="cbp-filter-item u-cubeportfolio__item" data-filter=".internal">Internal</li> -->
       <li style="list-style-type: none; text-align: left;" class="mt-5 mb-2">RESOURCE TOPICS</li>
       <li class="cbp-filter-item u-cubeportfolio__item" data-filter=".security">Security</li>
       <li class="cbp-filter-item u-cubeportfolio__item" data-filter=".office-365">Office 365</li>
@@ -390,8 +396,10 @@
       <li style="list-style-type: none; text-align: left;" class="mt-5 mb-2">SALES TOOLS</li>
       <li class="cbp-filter-item u-cubeportfolio__item" data-filter=".presentation-decks">Presentation Decks</li>
       <li class="cbp-filter-item u-cubeportfolio__item" data-filter=".battle-cards">Battle Cards</li>
-    </ul>
-    <!-- End Filter -->
+    </ul> -->
+    <!-- End Cube Filter -->
+
+
   </nav>
   <!-- End Sidebar Nav -->
 
