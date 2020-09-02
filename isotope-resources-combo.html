@@ -215,7 +215,7 @@
 
     .item {
       width: 80px;
-      height: 80px;
+      height: 110px;
       padding: 5px;
       margin: 5px;
       color: white;
@@ -351,13 +351,13 @@
         <label><input type="checkbox" value=".gamma" /> gamma</label>
         <label><input type="checkbox" value=".delta" /> delta</label>
       </div>
-      <div class="option-set" data-group="color">
+      <div class="option-set" data-group="competitor">
         <label><input type="checkbox" value=".red" /> red</label>
         <label><input type="checkbox" value=".blue" /> blue</label>
         <label><input type="checkbox" value=".green" /> green</label>
         <label><input type="checkbox" value=".yellow" /> yellow</label>
       </div>
-      <div class="option-set" data-group="size">
+      <div class="option-set" data-group="tool">
         <label><input type="checkbox" value=".size8" /> size8</label>
         <label><input type="checkbox" value=".size9" /> size9</label>
         <label><input type="checkbox" value=".size10" /> size10</label>
@@ -408,54 +408,54 @@
   <div class="mb-9">
     
     <!-- Content -->
-    <div id="container" style="position: relative; height: 1170px;">
+    <div id="container" style="/* position: relative; height: 1170px; */">
       <div class="item brand1 alpha red size8" style="position: absolute; left: 0px; top: 0px;">
-        <p>brand1</p><p>alpha</p><p>size8</p>
+        <p>brand1</p><p>alpha</p><p>red</p><p>size8</p>
       </div>
       <div class="item brand2 beta red size9" style="position: absolute; left: 90px; top: 0px;">
-        <p>brand2</p><p>beta</p><p>size9</p>
+        <p>brand2</p><p>beta</p><p>red</p><p>size9</p>
       </div>
       <div class="item brand3 gamma red size10" style="position: absolute; left: 180px; top: 0px;">
-        <p>brand3</p><p>gamma</p><p>size10</p>
+        <p>brand3</p><p>gamma</p><p>red</p><p>size10</p>
       </div>
       <div class="item brand4 delta red size11" style="position: absolute; left: 270px; top: 0px;">
-        <p>brand4</p><p>delta</p><p>size11</p>
+        <p>brand4</p><p>delta</p><p>red</p><p>size11</p>
       </div>
       <div class="item brand1 alpha blue size8" style="position: absolute; left: 360px; top: 0px;">
-        <p>brand1</p><p>alpha</p><p>size8</p>
+        <p>brand1</p><p>alpha</p><p>blue</p><p>size8</p>
       </div>
       <div class="item brand2 beta blue size9" style="position: absolute; left: 450px; top: 0px;">
-        <p>brand2</p><p>beta</p><p>size9</p>
+        <p>brand2</p><p>beta</p><p>blue</p><p>size9</p>
       </div>
       <div class="item brand3 gamma blue size10" style="position: absolute; left: 540px; top: 0px;">
-        <p>brand3</p><p>gamma</p><p>size10</p>
+        <p>brand3</p><p>gamma</p><p>blue</p><p>size10</p>
       </div>
       <div class="item brand4 delta blue size11" style="position: absolute; left: 540px; top: 0px;">
-        <p>brand4</p><p>delta</p><p>size10</p>
+        <p>brand4</p><p>delta</p><p>blue</p><p>size10</p>
       </div>
       <div class="item brand1 alpha green size8" style="position: absolute; left: 360px; top: 0px;">
-        <p>brand1</p><p>alpha</p><p>size8</p>
+        <p>brand1</p><p>alpha</p><p>green</p><p>size8</p>
       </div>
       <div class="item brand2 beta green size9" style="position: absolute; left: 450px; top: 0px;">
-        <p>brand2</p><p>beta</p><p>size9</p>
+        <p>brand2</p><p>beta</p><p>green</p><p>size9</p>
       </div>
       <div class="item brand3 gamma green size10" style="position: absolute; left: 540px; top: 0px;">
-        <p>brand3</p><p>gamma</p><p>size10</p>
+        <p>brand3</p><p>gamma</p><p>green</p><p>size10</p>
       </div>
       <div class="item brand4 delta green size11" style="position: absolute; left: 540px; top: 0px;">
-        <p>brand4</p><p>delta</p><p>size10</p>
+        <p>brand4</p><p>delta</p><p>green</p><p>size10</p>
       </div>
       <div class="item brand1 alpha yellow size8" style="position: absolute; left: 360px; top: 0px;">
-        <p>brand1</p><p>alpha</p><p>size8</p>
+        <p>brand1</p><p>alpha</p><p>yellow</p><p>size8</p>
       </div>
       <div class="item brand2 beta yellow size9" style="position: absolute; left: 450px; top: 0px;">
-        <p>brand2</p><p>beta</p><p>size9</p>
+        <p>brand2</p><p>beta</p><p>yellow</p><p>size9</p>
       </div>
       <div class="item brand3 gamma yellow size10" style="position: absolute; left: 540px; top: 0px;">
-        <p>brand3</p><p>gamma</p><p>size10</p>
+        <p>brand3</p><p>gamma</p><p>yellow</p><p>size10</p>
       </div>
       <div class="item brand4 delta yellow size11" style="position: absolute; left: 540px; top: 0px;">
-        <p>brand4</p><p>delta</p><p>size10</p>
+        <p>brand4</p><p>delta</p><p>yellow</p><p>size10</p>
       </div>
     </div>
     <!-- End Content -->
@@ -507,8 +507,8 @@ var filters = {};
 var data = {
   types: [ 'brand1', 'brand2', 'brand3', 'brand4' ],
   topics: [ 'alpha', 'beta', 'gamma', 'delta' ],
-  colors: [ 'red', 'blue', 'green', 'yellow' ],
-  sizes: [ 'size8', 'size9', 'size10', 'size11' ],
+  competitors: [ 'red', 'blue', 'green', 'yellow' ],
+  tools: [ 'size8', 'size9', 'size10', 'size11' ],
 };
 
 var $container = $('#container');
@@ -576,22 +576,23 @@ function getComboFilter() {
 
 // helper made to make items
 function createContent() {
-  var type, topic, color, size;
+  var type, topic, competitor, tool;
   var items = '';
   // dynamically create content
-  for (var i=0, len1 = data.topics.length; i < len1; i++) {
-    topic = data.topics[i];
+  for (var i=0, len1 = data.types.length; i < len1; i++) {
+    type = data.types[i];
     for (var j=0, len2 = data.topics.length; j < len2; j++) {
       topic = data.topics[j];
-        for (var l=0, len3 = data.colors.length; l < len3; l++) {
-        color = data.colors[l];
-        for (var k=0, len4 = data.sizes.length; k < len4; k++) {
-          size = data.sizes[k];
+        for (var l=0, len3 = data.competitors.length; l < len3; l++) {
+        competitor = data.competitors[l];
+        for (var k=0, len4 = data.tools.length; k < len4; k++) {
+          tool = data.tools[k];
           var itemHtml = '<div class="item ' + type + ' ' +
-            topic + ' ' + color + ' ' + size + '">' +
+            topic + ' ' + competitor + ' ' + tool + '">' +
             '<p>' + type + '</p>' +
             '<p>' + topic + '</p>' +
-            '<p>' + size + '</p>' +
+            '<p>' + competitor + '</p>' +
+            '<p>' + tool + '</p>' +
             '</div>';
             items += itemHtml;
         }
