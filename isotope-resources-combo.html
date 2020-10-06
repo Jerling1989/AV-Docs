@@ -214,7 +214,7 @@
     }
 
     .item {
-      width: 85px;
+      width: 100px;
       height: 160px;
       padding: 5px;
       margin: 5px;
@@ -361,14 +361,14 @@
       </div>
       <div class="option-set" data-group="competitor">
         <label style="font-size: .9375rem;" class="mt-5 mb-2 text-white">COMPETITION</label>
-        <label><input type="checkbox" value=".red" /> red</label>
-        <label><input type="checkbox" value=".blue" /> blue</label>
-        <label><input type="checkbox" value=".green" /> green</label>
-        <label><input type="checkbox" value=".yellow" /> yellow</label>
+        <label><input type="checkbox" value=".red" /> ATP / EOP</label>
+        <label><input type="checkbox" value=".blue" /> SEGs</label>
+        <label><input type="checkbox" value=".green" /> Proofpoimt</label>
+        <label><input type="checkbox" value=".yellow" /> Mimecast</label>
       </div>
       <div class="option-set" data-group="tool">
         <label style="font-size: .9375rem;" class="mt-5 mb-2 text-white">SALES TOOLS</label>
-        <label><input type="checkbox" value=".size8" /> size8</label>
+        <label><input type="checkbox" value=".presentation-decks" /> Presentation Decks</label>
         <label><input type="checkbox" value=".size9" /> size9</label>
         <label><input type="checkbox" value=".size10" /> size10</label>
         <label><input type="checkbox" value=".size11" /> size11</label>
@@ -419,8 +419,8 @@
     
     <!-- Content -->
     <div id="container" style="/* position: relative; height: 1170px; */">
-      <div class="item solution-brief office-365 red size8" style="position: absolute; left: 0px; top: 0px;">
-        <p>Solution Brief</p><p>Office 365</p><p>red</p><p>size8</p>
+      <div class="item solution-brief office-365 red presentation-decks" style="position: absolute; left: 0px; top: 0px;">
+        <p>Solution Brief</p><p>Office 365</p><p>red</p><p>Presentation Decks</p>
       </div>
       <div class="item white-paper g-suite red size9" style="position: absolute; left: 90px; top: 0px;">
         <p>White Paper</p><p>G Suite</p><p>red</p><p>size9</p>
@@ -431,8 +431,8 @@
       <div class="item webinar delta red size11" style="position: absolute; left: 270px; top: 0px;">
         <p>Webinar</p><p>delta</p><p>red</p><p>size11</p>
       </div>
-      <div class="item solution-brief office-365 blue size8" style="position: absolute; left: 360px; top: 0px;">
-        <p>Solution Brief</p><p>Office 365</p><p>blue</p><p>size8</p>
+      <div class="item solution-brief office-365 blue presentation-decks" style="position: absolute; left: 360px; top: 0px;">
+        <p>Solution Brief</p><p>Office 365</p><p>blue</p><p>Presentation Decks</p>
       </div>
       <div class="item white-paper g-suite blue size9" style="position: absolute; left: 450px; top: 0px;">
         <p>White Paper</p><p>G Suite</p><p>blue</p><p>size9</p>
@@ -443,8 +443,8 @@
       <div class="item webinar delta blue size11" style="position: absolute; left: 540px; top: 0px;">
         <p>Webinar</p><p>delta</p><p>blue</p><p>size10</p>
       </div>
-      <div class="item solution-brief office-365 green size8" style="position: absolute; left: 360px; top: 0px;">
-        <p>Solution Brief</p><p>Office 365</p><p>green</p><p>size8</p>
+      <div class="item solution-brief office-365 green presentation-decks" style="position: absolute; left: 360px; top: 0px;">
+        <p>Solution Brief</p><p>Office 365</p><p>green</p><p>Presentation Decks</p>
       </div>
       <div class="item white-paper g-suite green size9" style="position: absolute; left: 450px; top: 0px;">
         <p>White Paper</p><p>G Suite</p><p>green</p><p>size9</p>
@@ -455,8 +455,8 @@
       <div class="item webinar delta green size11" style="position: absolute; left: 540px; top: 0px;">
         <p>Webinar</p><p>delta</p><p>green</p><p>size10</p>
       </div>
-      <div class="item solution-brief office-365 yellow size8" style="position: absolute; left: 360px; top: 0px;">
-        <p>Solution Brief</p><p>Office 365</p><p>yellow</p><p>size8</p>
+      <div class="item solution-brief office-365 yellow presentation-decks" style="position: absolute; left: 360px; top: 0px;">
+        <p>Solution Brief</p><p>Office 365</p><p>yellow</p><p>Presentation Decks</p>
       </div>
       <div class="item white-paper g-suite yellow size9" style="position: absolute; left: 450px; top: 0px;">
         <p>White Paper</p><p>G Suite</p><p>yellow</p><p>size9</p>
@@ -518,7 +518,7 @@ var data = {
   types: [ 'solution-brief', 'white-paper', 'case-study', 'brand4' ],
   topics: [ 'office-365', 'g-suite', 'messaging-apps', 'delta' ],
   competitors: [ 'red', 'blue', 'green', 'yellow' ],
-  tools: [ 'size8', 'size9', 'size10', 'size11' ],
+  tools: [ 'presentation-decks', 'size9', 'size10', 'size11' ],
 };
 
 var $container = $('#container');
